@@ -8,7 +8,7 @@ Built with **Next.js**, **Groq API** (Llama 3.3 70B), and **Tailwind CSS**.
 
 ## 🔗 Live Demo
 
-**[https://your-deployment.vercel.app](https://your-deployment.vercel.app)**
+**[https://persona-ai-one-blue.vercel.app](https://persona-ai-one-blue.vercel.app)**
 
 ---
 
