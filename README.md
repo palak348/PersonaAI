@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scaler Persona-Based AI Chatbot
 
-## Getting Started
+A highly customized, persona-based AI chatbot featuring Anshuman Singh, Abhimanyu Saxena, and Kshitij Mishra from Scaler. This project leverages the fast Groq API (Llama 3) and Next.js to deliver a premium, responsive conversational experience.
 
-First, run the development server:
+## Features
+- **3 Distinct Personas:** Switch between Anshuman, Abhimanyu, and Kshitij. Each has a highly-engineered system prompt capturing their unique teaching and leadership styles.
+- **Lightning Fast Inference:** Powered by Groq's LPU technology and Llama 3 8B.
+- **Premium UI:** A sleek, modern dark-mode interface built with Vanilla CSS.
+- **Mobile Responsive:** Fully functional on both desktop and mobile devices.
+- **Suggestion Chips:** Quick-start questions tailored to each persona to get the conversation going.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo
+> **[Insert your Vercel/Netlify Deployed Link Here]**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup Instructions (Local Development)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js (v18 or higher)
+- A free API key from [Groq Console](https://console.groq.com)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-link>
+   cd Persona-1
+   ```
 
-## Learn More
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Environment Setup:**
+   - Copy the `.env.example` file and rename it to `.env.local`
+   - Paste your Groq API Key into `.env.local`:
+   ```env
+   GROQ_API_KEY=your_actual_api_key_here
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. **Open the App:**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+## Documentation
+- `prompts.md`: Contains the detailed system prompts, rationale, and constraints for each persona.
+- `reflection.md`: A 300-500 word reflection on the build process and the GIGO principle.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+- **Frontend:** Next.js (App Router), React, Vanilla CSS
+- **Backend:** Next.js API Routes, Groq SDK
+- **LLM:** Llama-3-8b-8192 (via Groq)
